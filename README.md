@@ -1,5 +1,5 @@
 <h1 id="description">Description</h1>
-<p>PatternFinder is a Java application which matches an image in a background. It can use two techniques for pattern matching :</p>
+<p>(Full description in pdf file) PatternFinder is a Java application which matches an image in a background. It can use two techniques for pattern matching :</p>
 <ol>
 <li><p>Distance Based Search</p></li>
 <li><p>Similarity Based Search</p></li>
