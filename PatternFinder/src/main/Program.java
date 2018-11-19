@@ -21,6 +21,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
 
+
 public class Program extends Application{
     
     static String projectPath = System.getProperty("user.dir");
@@ -32,7 +33,7 @@ public class Program extends Application{
     public void start(Stage primaryStage) {
         
         primaryStage.setTitle("Pattern Finder");
-        primaryStage.getIcons().add(new Image("file:" + projectPath + "/images/icon.jpg"));
+        primaryStage.getIcons().add(new Image("file:" + projectPath + File.separator + "images" + File.separator + "icon.jpg"));
         
         Text t = new Text(10, 50, "Select a background image along with a pattern image to find in background \n "
                 + "(pattern must be smaller than background)");
@@ -40,13 +41,13 @@ public class Program extends Application{
         
         FileChooser fileChooserBackground = new FileChooser();
         fileChooserBackground.setTitle("Open Background File");
-        fileChooserBackground.setInitialDirectory(new File("images"));
+        fileChooserBackground.setInitialDirectory(new File(projectPath + File.separator + "images"));
         fileChooserBackground.getExtensionFilters().addAll(
                 new ExtensionFilter("Image Files", "*.png", "*.jpg"));
         
         FileChooser fileChooserImage = new FileChooser();
         fileChooserImage.setTitle("Open Background File");
-        fileChooserImage.setInitialDirectory(new File("images"));
+        fileChooserImage.setInitialDirectory(new File(projectPath + File.separator + "images"));
         fileChooserImage.getExtensionFilters().addAll(
                 new ExtensionFilter("Image Files", "*.png", "*.jpg"));
 
@@ -126,7 +127,7 @@ public class Program extends Application{
         root.setHgap(10);
         root.setVgap(10);
         
-        ImageView im = new ImageView(new Image("file:" + projectPath + "/images/icon.jpg"));
+        ImageView im = new ImageView(new Image("file:" + projectPath + File.separator + "images" + File.separator + "icon.jpg"));
         im.setFitWidth(120);
         im.setFitHeight(100);
         
