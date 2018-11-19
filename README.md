@@ -1,4 +1,3 @@
-<p><img src="icon.jpg" alt="image" style="width:50mm" /> <span id="fig:my_label" label="fig:my_label">[fig:my_label]</span></p>
 <h1 id="description">Description</h1>
 <p>PatternFinder is a Java application which matches an image in a background. It can use two techniques for pattern matching :</p>
 <ol>
@@ -16,11 +15,9 @@
 <h2 id="image-processing">Image Processing</h2>
 <p>We begin by developping tools for processing images. Transforming an image into a table of RGB (int[][]) and then be able to extract each component of this RGB color (done by manipulating bits, shifting, and, or...). We also need to transform each RGB color into a shade of gray and vice versa.</p>
 <h2 id="distance-based-search">Distance Based Search</h2>
-<p>For each possible position of the pattern image in the background image, we calculate the distance between pixel values and put them in a matrix, the distance matrix. We use the absolute mean error to measure the distance between two pixels. <br /><span class="math display">$$d(B,P) = \frac{\sum_{c \in \{R, G, B\}}|B_c - P_c|}{3}$$</span><br /> And then we calculate the distance between the pattern image <span class="math inline"><em>P</em></span> and the sub-background image starting at <span class="math inline"><em>r</em><em>o</em><em>w</em></span> and <span class="math inline"><em>c</em><em>o</em><em>l</em></span> from the full background image <span class="math inline"><em>B</em></span>. <br /><span class="math display">$$D(B,P, row, col) = \frac{\sum_{(i,j) \in dim(P)} d(B[row + i, col + j],P[i,j])}{\# pixels\,\, of\,\, B}$$</span><br /></p>
+<p>For each possible position of the pattern image in the background image, we calculate the distance between pixel values and put them in a matrix, the distance matrix. We use the absolute mean error to measure the distance between two pixels. And then we calculate the distance between the pattern image and the sub-background image.</p>
 <h2 id="similarity-based-search">Similarity Based Search</h2>
-<p>Same as 3.2 but we use a coefficient of correlation instead to fill a similarity matrix. <br /><span class="math display">$$C(B, P, row, col) = 
-\frac{\sum_{(i,j) \in dim(P)} (B[row + i, col + j] - \tilde{B})  \times (P[i,j] - \tilde{P}))}
-{\sqrt{{\sum_{(i,j) \in dim(P)} (B[row + i, col + j] - \tilde{B})^2} \times \sum_{(i,j) \in dim(P)} (P[i,j] - \tilde{P})^2}}$$</span><br /> where <span class="math inline"><em>P̃</em></span> and <span class="math inline"><em>B̃</em></span> are the mean values of shades of gray of the images.</p>
+<p>Same as 3.2 but we use a coefficient of correlation instead to fill a similarity matrix.</p>
 <h2 id="finding-best-fit">Finding best fit</h2>
 <p>Two methods to find the n best values:</p>
 <ol>
