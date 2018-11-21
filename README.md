@@ -1,6 +1,5 @@
 
 
-![icon](https://user-images.githubusercontent.com/36798245/48853523-fd53fe00-edaf-11e8-8799-9522c0910168.jpg | width=100)
 <img src="https://user-images.githubusercontent.com/36798245/48853523-fd53fe00-edaf-11e8-8799-9522c0910168.jpg" alt="drawing" width="200"/>
 
 <h1 id="description">Description</h1>
