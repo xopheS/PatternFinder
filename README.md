@@ -1,12 +1,6 @@
 
 
-<img src="https://user-images.githubusercontent.com/36798245/48853523-fd53fe00-edaf-11e8-8799-9522c0910168.jpg" alt="drawing" width="200" class="center"/>
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+<img src="https://user-images.githubusercontent.com/36798245/48853523-fd53fe00-edaf-11e8-8799-9522c0910168.jpg" alt="drawing" width="200" align="middle"/>
 
 <h1 id="description">Description</h1>
 <p>(Full description in pdf file) PatternFinder is a Java application which matches an image in a background. It can use two techniques for pattern matching :</p>
