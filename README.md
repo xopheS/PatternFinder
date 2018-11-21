@@ -1,6 +1,6 @@
 
 
-![icon](https://user-images.githubusercontent.com/36798245/48853523-fd53fe00-edaf-11e8-8799-9522c0910168.jpg =250x)
+![icon](https://user-images.githubusercontent.com/36798245/48853523-fd53fe00-edaf-11e8-8799-9522c0910168.jpg =100x20)
 
 <h1 id="description">Description</h1>
 <p>(Full description in pdf file) PatternFinder is a Java application which matches an image in a background. It can use two techniques for pattern matching :</p>
